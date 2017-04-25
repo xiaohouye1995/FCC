@@ -1,0 +1,368 @@
+/*清除默认参数*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none;}
+
+body{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+/*导航栏*/
+.navbar-brand{
+    padding: 0 20px;
+}
+.navbar-header .navbar-brand:hover{
+    color:#E64B36;
+}
+.navbar-brand > img{
+    display: inline-block;
+    margin-right: 8px;
+}
+.navbar-brand > p{
+    display: inline-block;
+    font-size: 22px;
+    vertical-align:middle;
+}
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: transform 1.5s;
+}
+.nav-logo:hover{
+    transform: rotate(360deg);
+}
+.nav-tag a{
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color:#E64B36;
+}
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+@media(max-width:768px){
+    .navbar-brand > p{
+        display: none;
+    }
+}
+/*home页*/
+.home-intro {
+    height: 855px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: url('../images/home-banner.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+.bg-overlay {
+    background:rgba(0,0,0, 0.3);
+    height: 855px;
+}
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.intro-message > h1 {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 1px 2px #888;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.7);
+}
+.intro-message > h3 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0);
+    color: #6f7278;
+}
+.intro-divider{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+}
+@media(max-width:768px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background:#fff;
+        border-radius: 10px;
+    }
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+    .btn{
+        width: 100%;
+    }
+}
+/*社交按钮*/
+.btn {
+    display: inline-block;
+    color: #000;
+    background: #ffffff;
+    transition: all 0.2s;
+
+}
+.btn:hover {
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+
+
+/*about页*/
+.about-workExp {
+    background: url('../images/公路.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/*about list*/
+.maxhid{
+    display: none;
+}
+.workExp-list-font {
+    display: none;
+}
+.workExp-list{
+    margin: 30px 0;
+    color: #e7e7e7;
+    text-align: center;
+}
+.workExp-list-logo{
+    height: 100%;
+    line-height: 100%;
+}
+.workExp-list-logo img{
+    width: 100px;
+}
+.workExp-list-tit{
+    font-size: 22px;
+}
+.workExp-list-tit a{
+    color:#e7e7e7;
+}
+.workExp-list-note{
+    color: #6f7278;
+}
+.workExp-list-text{
+    text-align: left;
+}
+@media(min-width:768px){
+    .minhid{
+        display: none;
+    }
+    .workExp-list{
+        padding-top: 50px;
+        height: 855px;
+        border-right: 1px solid #231815;
+        border-left: 1px solid #231815;
+        color: #e7e7e7;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .workExp-list:hover {
+        transform: rotateY(180deg);
+    }
+    .workExp-list:hover > .workExp-list-font {
+        opacity: 0;
+    }
+    .workExp-list:hover > .workExp-list-back {
+        opacity: 1;
+        transform: rotateY(180deg);
+    }
+    .workExp-list-font .workExp-list-logo img{
+        width: 180px;
+    }
+    .workExp-list-font .workExp-list-time{
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    .workExp-list-font{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .workExp-list-back {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        right: 0;
+        padding: 0 15px;
+        transition: opacity .5s, transform .8s;
+        z-index: 1;
+    }
+    .workExp-list-back:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-image: url('../images/公路.jpg');
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-filter: blur(20px);
+        -moz-filter: blur(20px);
+        -ms-filter: blur(20px);
+        -o-filter: blur(20px);
+        filter: blur(20px);
+    }
+    .workExp-list-back .workExp-list-hd{
+        margin-top: 40px;
+    }
+    .workExp-list-font .workExp-list-hd{
+        margin-left: 60px;
+    }
+    .workExp-list-hd{
+        float: right;
+        width: 1.5em;
+        line-height: 1.2em;
+        font-size: 3.5em;
+        margin-right: 60px;
+    }
+    .workExp-list-logo{
+        height: 140px;
+        line-height: 140px;
+    }
+    .workExp-list-logo img{
+        width: 140px;
+    }
+    .workExp-list-time{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .workExp-list-tit{
+        font-size: 20px;
+    }
+    .workExp-list-tit a{
+        color:#e7e7e7;
+    }
+    .workExp-list-tit a:hover{
+        color: #f0ad4e;
+    }
+    .workExp-list-note{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #6f7278;
+    }
+    .workExp-list-text{
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+/* Portfolio页*/
+.por-bounds {
+    color: #e6ebe6;
+    background: url('../images/蓝色方块.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.por-tit{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/*Portfolio items*/
+.portfolio-item {
+    margin: 0 0 30px;
+    padding: 7px;
+    height: 308px;
+    border: 1px outset rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+.portfolio-item:hover {
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+.portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.portfolio-hover {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+}
+.portfolio-hover:hover {
+    opacity: 1;
+}
+.portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff;
+}
+.portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+    padding: 25px;
+}
+.portfolio-caption p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    margin: 2px 0 0 0;
+}
+.pro-btn{
+    margin-bottom: 30px;
+}
+.pro-btn a{
+    width: 200px;
+}
+.pro-btn .btn-primary{
+    background: #ce4a35;
+    border: 0;
+}
+.pro-btn .btn-primary:hover{
+    background: #ce4a35;
+    opacity: .9;
+}
+@media (max-width:767px) {
+    .portfolio-item {
+        margin: 0 0 15px;
+    }
+}
+
+/*尾部*/
+footer {
+    padding: 18px 0;
+    background: #dcdcdc;
+}
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+
+
+
+

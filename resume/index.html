@@ -2,254 +2,490 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>周小瑜的个人主页</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?1.1.2">
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--导航栏开始-->
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-    <div class="container topnav">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <!--把button放在header里是因为可以和标题ZHOUXIAOYU在同一行-->
-            </button>
-            <a class="nav navbar-brand topnav" href="http://codepen.io/zhouxioayu/">ZHOUXIAOYU</a>
+<header>
+    <!--导航栏开始-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--移动设备导航条切换 汉堡按钮-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--导航LOGO-->
+                <a class="navbar-brand" href="https://zhouxiaoyu1994.github.io/">
+                    <img src="./images/zhouxiaoyu.jpg" alt="Brand" class="nav-logo">
+                    <p>ZHOUXIAOYU</p>
+                </a>
+            </div>
+            <!--导航列表-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-tag"><a href="#home">Home</a></li>
+                    <li class="nav-tag"><a href="#about">About</a></li>
+                    <li class="nav-tag"><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ">
-                <li class=""><a href="#home">Home</a></li>
-                <li class=""><a href="#about">About</a></li>
-                <li class=""><a href="#portfolio">Portfolio</a></li>
-                <li class=""><a href="#contact">Contact</a></li>
-            </ul>
+    </nav>
+    <!--导航栏结束-->
+</header>
+<main>
+    <!--home页开始-->
+    <div class="home-intro" id="home">
+        <div class="bg-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>周小瑜的个人作品集</h1>
+                            <h3>谁问生死簿，醉舞长安街！</h3>
+                            <hr class="intro-divider">
+                            <!--社交按钮-->
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/俊阳-周-811333136" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-linkedin fa-fw"></i>
+                                        <span class="network-name">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/zhouxiaoyu1994" target="_blank" class="btn btn-default btn-lg ">
+                                        <i class="fa fa-github fa-fw"></i>
+                                        <span class="network-name">Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.jianshu.com/u/87b03448aa56" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-user-o fa-fw"></i>
+                                        <span class="network-name">BLOG</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.freecodecamp.cn/zhouxiaoyu1994" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-free-code-camp fa-fw"></i>
+                                        <span class="network-name">FCC</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.jianshu.com/u/87b03448aa56" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-book fa-fw"></i>
+                                        <span class="network-name">简书</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-<!--导航栏结束-->
-<!--home页开始-->
-<a name="home"></a>
-<div class="intro-header">
-    <div class="bg-overlay">
+    <!--home页结束-->
+    <!--about页开始-->
+    <div class="about-workExp" id="about">
+            <div class="container">
+                <div class="row">
+                    <!--about标题-->
+                    <div class="col-lg-2 col-sm-12  workExp-list minhid">
+                        <div class="workExp-list-back">
+                            <h2 class="workExp-list-hd">教育及工作经历</h2>
+                        </div>
+                    </div>
+                    <!-- 南京应天职业技术学院  -->
+                        <div class="col-lg-2 col-sm-12 workExp-list">
+                            <div class="workExp-list-font">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-yingtian.png"  alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2012.09 - 2014.09
+                                </div>
+                            </div>
+                            <div class="workExp-list-back">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-yingtian.png"  alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2012.09 - 2014.09
+                                </div>
+                                <div class="workExp-list-job">
+                                    <h3 class="workExp-list-tit"><a href="http://www.ytc.edu.cn/" target="_blank">南京应天职业技术学院</a></h3>
+                                    <h4 class="workExp-list-note">（电力系统自动化专业）</h4>
+                                    <p class="workExp-list-text">期间担任一年院心理协会副会长一职,同时兼任南京金审学院心协副会长</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 中国人民武装警察部队南阳支队-->
+                        <div class="col-lg-2 col-sm-12 workExp-list">
+                            <div class="workExp-list-font">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-wujing.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2014.09 - 2016.09
+                                </div>
+                            </div>
+                            <div class="workExp-list-back">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-wujing.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2014.09 - 2016.09
+                                </div>
+                                <div class="workExp-list-job">
+                                    <h3 class="workExp-list-tit"><a href="http://wj.81.cn/" target="_blank">中国人民武装警察部队</a></h3>
+                                    <h4 class="workExp-list-note">（南阳支队)</h4>
+                                    <p class="workExp-list-text">期间参加总队通信兵集训及通信干部骨干集训共两次，均获优秀学员。担任一年支队网管中心通信兵，负责支队网站的建设、维护和管理</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 杭州1688玩手游网-->
+                        <div class="col-lg-2 col-sm-12 workExp-list">
+                            <div class="workExp-list-font">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-1688wan.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2016.10 - 2016.12
+                                </div>
+                            </div>
+                            <div class="workExp-list-back">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-1688wan.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2016.10 - 2016.12
+                                </div>
+                                <div class="workExp-list-job">
+                                    <h3 class="workExp-list-tit"><a href="http://www.1688wan.com/" target="_blank"> 杭州1688玩手游网</a></h3>
+                                    <h4 class="workExp-list-note">（原创编辑)</h4>
+                                    <p class="workExp-list-text">期间担任原创编辑，负责撰写稿件、图文直播、微信推送，并配合前后端对网站进行改版优化。</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- FreeCodeCamp-->
+                        <div class="col-lg-2 col-sm-12 workExp-list">
+                            <div class="workExp-list-font">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-fcc.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2017.01 - 2017.03
+                                </div>
+                            </div>
+                            <div class="workExp-list-back">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo-fcc.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2017.01 - 2017.03
+                                </div>
+                                <div class="workExp-list-job">
+                                    <h3 class="workExp-list-tit"><a href="https://www.freecodecamp.cn/home" target="_blank"> FreeCodeCamp</a></h3>
+                                    <h4 class="workExp-list-note">（前端开发)</h4>
+                                    <p class="workExp-list-text">参加开源项目 FreeCodeCamp 学习算法、前端框架Bootstrap、jQuery、AngularJS，制作个人项目，并获得颁发的前端开发认证书</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--百度前端技术学院-->
+                        <div class="col-lg-2 col-sm-12 workExp-list">
+                            <div class="workExp-list-font">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo_baidu_ife.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2017.04 - 至今
+                                </div>
+                            </div>
+                            <div class="workExp-list-back">
+                                <div class="workExp-list-logo">
+                                    <img src="./images/logo_baidu_ife.png" alt="logo">
+                                </div>
+                                <div class="workExp-list-time">
+                                    2017.04 - 至今
+                                </div>
+                                <div class="workExp-list-job">
+                                    <h3 class="workExp-list-tit"><a href="http://ife.baidu.com/" target="_blank">百度前端技术学院</a></h3>
+                                    <h4 class="workExp-list-note">（前端开发)</h4>
+                                    <p class="workExp-list-text">（学习实践中.....）</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--about标题-->
+                        <div class="col-lg-2 col-sm-12  workExp-list maxhid">
+                            <div class="workExp-list-font">
+                                <h2 class="workExp-list-hd">教育及工作经历</h2>
+                            </div>
+                            <div class="workExp-list-back">
+                                <h2 class="workExp-list-hd">教育及工作经历</h2>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+    <!--about页结束-->
+    <!--portfolio页开始-->
+    <div id="portfolio" class="por-bounds">
         <div class="container">
+            <!--标题-->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>周小瑜的个人作品集</h1>
-                        <h3>谁问生死簿，醉舞长安街！</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">                                                 <li>
-                            <a href="https://www.linkedin.com/in/俊阳-周-811333136" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/zhouxiaoyu1994" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="http://weibo.com/5736438053/profile?topnav=1&wvr=6" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-weibo" aria-hidden="true"></i> <span class="network-name">微博</span></a>
-                            </li>
-                            <li>
-                                <a href="http://www.jianshu.com/u/87b03448aa56" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-book" aria-hidden="true"></i> <span class="network-name">简书</span></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <h2 class="por-tit">周小瑜的前端画室</h2>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!--home页结束-->
-<!--about页开始-->
-<a  name="about"></a>
-<div class="content-section-a">
-    <div class="bg-overlay2">
-        <div class="container">
+            <!-- 偶像致敬页 -->
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">向前奔跑的前端狮</h2>
-                    </br>
-                    <p class="lead"><a class="link" target="_blank" href="http://www.freecodecamp.com/thiagoferreira">周小瑜</a> <br/>22岁<br/>理工科专业-->退伍武警-->游戏编辑<br/>--->目前奋斗在前端工程师的道路上，拥有一年多的门户网站开发管理经验，两年军旅生涯锻炼出的责任心和团队协调能力。未来想要向数据库、JAVA、PHP等后端开发方向发展，成为一个出色的全栈工程师。</br>
-                        --->个人技能:</br>
-                        语言:</br>
-                        Javascript, HTML5, CSS3, jQuery, Bootstrap3, Angular.js, Meteor.js.</br>
-                        工具:</br>
-                        Git, Responsive Web Design, Agile Methodologies.
-                    </p>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://codepen.io/zhouxioayu/pen/KadEjx" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/周瑜-网站致敬页.jpg" class="img-responsive" alt="网站致敬页">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>偶像致敬页</h4>
+                        <p class="text-muted">运用 bootstrp 框架制作的简单Demo</p>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
-                    <img class="img-circle img-responsive" src="images/周小瑜.jpg" alt="">
+                <!-- 个人博客 -->
+                <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+                    <a href="https://zhouxiaoyu1994.github.io/#" class="portfolio-link" target="_blank" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/博客.jpg" class="img-responsive" alt="个人博客">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>个人博客</h4>
+                        <p class="text-muted">基于 hexo 框架搭建的个人博客，用于记录和分享</p>
+                    </div>
+                </div>
+                <!-- IFE-01 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-1:2/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-01.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-01</h4>
+                        <p id="small-text3" class="text-muted">百度前端学院任务，原生HTML、CSS编码</p>
+                    </div>
+                </div>
+
+                <!-- IFE-03 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-3/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-03.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-03</h4>
+                        <p class="text-muted">百度前端学院任务，position与float的三栏式布局</p>
+                    </div>
+                </div>
+
+                <!-- IFE-06 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-6/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-06.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-06</h4>
+                        <p class="text-muted">百度前端学院任务，PSD切图-报纸排版</p>
+                    </div>
+                </div>
+
+                <!-- 个人作品集 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/FCC2017/resume/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/作品集.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>个人作品集</h4>
+                        <p class="text-muted">使用bootstrp、fontawesome框架，用于展示</p>
+                    </div>
+                </div>
+                <!-- IFE-07 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-7/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-07.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-07</h4>
+                        <p class="text-muted">百度前端学院任务，PSD切图-常见技术官网</p>
+                    </div>
+                </div>
+                <!-- IFE-09 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-9/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-09.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-09</h4>
+                        <p class="text-muted">百度前端学院任务，PSD切图-个人数据中心</p>
+                    </div>
+                </div>
+                <!-- IFE-10 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/IFE-10.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IFE-10</h4>
+                        <p class="text-muted">百度前端学院任务，移动Web页面</p>
+                    </div>
+                </div>
+                <!-- FCC-弹幕-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-弹幕.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-弹幕</h4>
+                        <p class="text-muted">使用 jquery 框架，野狗（wilddog）作为数据存储平台</p>
+                    </div>
+                </div>
+                <!-- FCC-格言录-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-格言录.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-格言录</h4>
+                        <p class="text-muted">原生JS</p>
+                    </div>
+                </div>
+                <!-- FCC-维基-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-维基.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-维基</h4>
+                        <p class="text-muted">原生JS</p>
+                    </div>
+                </div>
+                <!-- FCC-计算器-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-计算器.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-计算器</h4>
+                        <p class="text-muted">原生JS</p>
+                    </div>
+                </div>
+                <!-- FCC-番茄钟-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-番茄钟.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-番茄钟</h4>
+                        <p class="text-muted">原生JS</p>
+                    </div>
+                </div>
+                <!-- FCC-跑马灯-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-gift fa-4x"></i>
+                            </div>
+                        </div>
+                        <img src="images/FCC-跑马灯.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FCC-跑马灯</h4>
+                        <p class="text-muted">原生JS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pro-btn">
+         <div class="col-lg-12 text-center">
+                    <a href="http://codepen.io/zhouxioayu/pens/popular/" target="_blank" class="btn btn-primary btn-lg active" role="button">点击更多</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<!--about页结束-->
-<!--portfolio页开始-->
-<a  name="portfolio"></a>
-<section id="portfolio" class="bg-light-gray bounds">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">小瑜的前端画室</h2>
-                <h3 id="below-section" class="section-subheading text-muted">坚持，我们还有梦想。</h3>
-            </div>
-        </div>
-        <!-- Portfolio img1 -->
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="http://codepen.io/zhouxioayu/pen/KadEjx" target="_blank" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/周瑜-网站致敬页.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>偶像致敬页</h4>
-                    <p id="small-text" class="text-muted">三国-大都督周瑜</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img1 -->
-
-            <!-- Portfolio img2 -->
-            <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
-                <a href="https://zhouxiaoyu1994.github.io/#" class="portfolio-link" target="_blank" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/博客.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>个人博客</h4>
-                    <p id="small-text" class="text-muted">青丘公子的漱芳斋</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img2 -->
-
-            <!-- Portfolio img3 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="https://zhouxiaoyu1994.github.io/game/" target="_blank" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/html5爱心鱼.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>HTML5小游戏</h4>
-                    <p id="small-text" class="text-muted">爱心鱼</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img3 -->
-
-            <!-- Portfolio img4 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="https://zhouxiaoyu1994.github.io/history/" target="_blank" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/时光轴.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>时光轴</h4>
-                    <p id="small-text" class="text-muted">个人博客的建设时间线</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img4 -->
-
-            <!-- Portfolio img5 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="https://zhouxiaoyu1994.github.io/about/#welcome" target="_blank" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/简历.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>简历</h4>
-                    <p id="small-text" class="text-muted">前端工程师职位</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img5 -->
-
-            <!-- Portfolio img6 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="http://codepen.io/zhouxioayu/pen/Xpmwgg" target="_blank" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-fire fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="images/作品集.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>个人作品集</h4>
-                    <p id="small-text" class="text-muted">前端</p>
-                </div>
-            </div>
-            <!-- End of Portfolio img6 -->
-        </div>
-    </div>
-</section>
-<!--portfolio页结束-->
-<!--contack页开始-->
-<a name="contact"></a>
-<div class="banner">
-    <div class="bg-overlay4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="connect">周小瑜的前端画室</h1><hr/>
-                    <h3 class="connect">用理工科的思维绘画出最美丽的色彩......</h3>
-                        <h3 class="connect"><em>Email:363993481@qq.com</em></h3>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://www.linkedin.com/in/俊阳-周-811333136" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/zhouxiaoyu1994" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="http://weibo.com/5736438053/profile?topnav=1&wvr=6" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-weibo" aria-hidden="true"></i> <span class="network-name">微博</span></a>
-                        </li>
-                        <li>
-                            <a href="http://www.jianshu.com/u/87b03448aa56" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-book" aria-hidden="true"></i> <span class="network-name">简书</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.container -->
-        </div>
-    </div>
-</div>
-</div>
-<!--contack页结束-->
-<!-- Footer -->
+    <!--portfolio页结束-->
+</main>
 <footer>
+    <!-- Footer -->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -264,10 +500,6 @@
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
                         <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
                 <p class="copyright text-muted small">Copyright &copy; 周小瑜的前端画室 2017. All Rights Reserved</p>

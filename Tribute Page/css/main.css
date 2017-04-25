@@ -1,0 +1,115 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+
+body{
+    margin-top:60px;
+}
+.public-footer{
+    min-height: 300px;
+    background: #1f1f1f;
+    color: #e6ebe6;
+
+}
+.public-footer-logo{
+    display: block;
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    width: 150px;
+
+}
+.logo-line{
+    display: block;
+    height: 80px;
+    width: 50px;
+    border-left: 2px #ffffff solid ;
+    margin-left: 60px;
+}
+.logo-photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    transition: transform 2s;
+
+}
+.logo-photo:hover{
+    transform: rotate(360deg);
+}
+.public-footer-text{
+    display: block;
+    float: left;
+    width: 500px;
+    margin-top: 88px;
+    margin-left: 20px;
+    margin-bottom: 44px;
+
+    font-size: 24px;
+    color: #ffffff;
+}
+.public-footer-link{
+    display:inline-block;
+    width: 100px;
+    background: #e7e7e7;
+
+
+}
+.link-project{
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 20px;
+
+}
+.link-project span{
+    display: block;
+    font-size: 20px;
+}
+.link-project ul{
+    margin-right: 20px;
+}
+.link-project ul {
+    display: inline-block;
+}
+.link-icon{
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    margin-top: 20px;
+}
+.link-icon ul li{
+    display: inline-block;
+}
+.link-icon span{
+    display: block;
+    font-size: 20px;
+}
+.link-icon a{
+    margin-right: 20px;
+    color: #e6ebe6;
+
+}
+.link-icon a:hover{
+    color: #2ca6cb;
+}
+
+.public-footer-copyright{
+    display: inline-block;
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+
+
+}
