@@ -217,14 +217,10 @@ body{
         right: 0;
         bottom: 0;
         z-index: -1;
-        background-image: url('../images/公路.jpg');
-        background-position: center top;
+        background: url('../images/公路.jpg') center top  fixed;
         background-size: cover;
-        background-attachment: fixed;
         -webkit-filter: blur(20px);
-        -moz-filter: blur(20px);
         -ms-filter: blur(20px);
-        -o-filter: blur(20px);
         filter: blur(20px);
     }
     .workExp-list-back .workExp-list-hd{
