@@ -163,11 +163,16 @@ body{
     .minhid{
         display: none;
     }
+    .maxhid{
+        display: block;
+    }
+    .workExp-list-font {
+        display: block;
+    }
     .workExp-list{
         padding-top: 50px;
         height: 855px;
-        border-right: 1px solid #231815;
-        border-left: 1px solid #231815;
+        
         color: #e7e7e7;
         text-align: center;
         cursor: pointer;
