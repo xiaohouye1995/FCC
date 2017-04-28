@@ -273,7 +273,7 @@ body{
 /* Portfolio页*/
 .por-bounds {
     color: #e6ebe6;
-    background: url('../images/por-bg.png') no-repeat center center fixed;
+    background: url('../images/por-bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .por-tit{
