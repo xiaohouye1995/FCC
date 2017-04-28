@@ -159,7 +159,7 @@ body{
 .workExp-list-text{
     text-align: left;
 }
-@media(min-width:768px){
+@media(min-width:1280px){
     .minhid{
         display: none;
     }
@@ -271,7 +271,7 @@ body{
 /* Portfolio页*/
 .por-bounds {
     color: #e6ebe6;
-    background: url('../images/蓝色方块.jpg') no-repeat center center fixed;
+    background: url('../images/por-bg.png') no-repeat center center fixed;
     background-size: cover;
 }
 .por-tit{
