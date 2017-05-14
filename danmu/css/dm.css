@@ -7,13 +7,20 @@ body{
 .hd-tit{
     color: #FFFFFF;
     text-align: center;
-    font-size: 8rem;
-    font-family: "Droid Serif";
+    font-size: 5rem;
+    font-family: 'Condiment', cursive;
 }
-.hd-sum{
+.hd-sum1{
     color: #FFFFFF;
     text-align: center;
     font-size: 2rem;
+    font-family: 'Condiment', cursive;
+}
+.hd-sum2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Condiment', cursive;
 }
 .dm{
     width: 80%;
