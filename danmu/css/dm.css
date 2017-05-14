@@ -40,9 +40,9 @@ body{
 .d_mask{
     position: absolute;
     top: -70px;
-    left: 0;
     width: 70%;
     height: 300px;
+    text-align: center;
 
 }
 .dm .d_screen .d_show div{
