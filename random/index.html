@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>名言录</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script language="javascript"  type="text/javascript" src="mingyan.js"></script>
+
+    <!--font图标外链-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--font图标外链-->
+
+    <!--一键分享到朋友圈-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+    <!--一键分享到朋友圈-->
+
+</head>
+<body onload="newQuotes()">
+    <div class = "main">
+        <div class="letter">
+            <div class="joke"><span id="text"><i class="fa fa-quote-left " aria-hidden="true"></i>&nbsp;<a id="aaa"></a> </span></div>
+            <div class="button">
+                <button class="button1" type="button" id="weibo"><a href="http://service.weibo.com/share/share.php?appkey=&title=&url=&pic=&searchPic=false&style=simple" target="_blank"><i class="fa fa-weibo fa-2x" aria-hidden="true"></i></a></button>
+                <button class="button1" type="button" id="wechat"><a class="social-share" data-disabled="google,twitter,facebook,qzone,qq,tencent,weibo,douban,diandian,linkedin"  data-initialized="true"><i class="icon-wechat" aria-hidden="true"></i></a></button>
+                <button class="button2" type="button" id="joke" onclick="newQuotes()" >轻松一下</button>
+            </div>
+        </div>
+        <div class = "footer">
+            <a href="https://codepen.io/zhouxioayu/"  target="_blank">by zhouxiaoyu</a>
+        </div>
+    </div>
+
+</body>
+</html>
