@@ -30,12 +30,12 @@ body{
 .d_screen{
     position: relative;
     margin-bottom: 30px;
-    background: url("../img/screen.png") no-repeat center center ;
-    background-size: contain;
+ /*  background: url("../img/screen.png") no-repeat center center ;
+    background-size: contain; */
 }
 .dm .d_screen {
     width:100%;
-    height: 680px;
+    height: 380px;
 }
 .d_mask{
     position: absolute;
