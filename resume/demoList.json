@@ -1,0 +1,81 @@
+{
+	"demos": [{
+			"title": "偶像致敬页",
+			"info": "运用 bootstrp 框架制作的简单Demo",
+			"imgSrc": "images/周瑜-网站致敬页.jpg",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/FCC2017/Tribute/index.html"
+		},
+		{
+			"title": "布局练习",
+			"info": "用原生HTML、CSS构建的常见网站布局",
+			"imgSrc": "images/IFE-01.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-1:2/index.html"
+		},
+		{
+			"title": "微博布局",
+			"info": "用原生HTML、CSS构建的微博式布局",
+			"imgSrc": "images/IFE-03.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-3/index.html"
+		},
+		{
+			"title": "报纸布局",
+			"info": "PSD切图-报纸排版",
+			"imgSrc": "images/IFE-06.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-6/index.html"
+		},
+		{
+			"title": "官网",
+			"info": "PSD切图-官网",
+			"imgSrc": "images/IFE-07.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-7/index.html"
+		},
+		{
+			"title": "数据中心",
+			"info": "PSD切图-数据中心",
+			"imgSrc": "images/IFE-09.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-9/index.html"
+		},
+		{
+			"title": "移动Web页面",
+			"info": "用原生HTML、CSS构建的常见移动Web页面",
+			"imgSrc": "images/IFE-10.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html"
+		},
+		{
+			"title": "弹幕网",
+			"info": "使用 jquery 框架，野狗云作为数据存储平台",
+			"imgSrc": "images/FCC-弹幕.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/FCC2017/danmu/index.html"
+		},
+		{
+			"title": "格言录",
+			"info": "随机生成格言展示",
+			"imgSrc": "images/FCC-格言录.png",
+			"htmlSrc": "https://codepen.io/zhouxioayu/pen/xgmMaO"
+		},
+		{
+			"title": "维基百科",
+			"info": "模仿维基百科进行搜索",
+			"imgSrc": "images/FCC-维基.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html"
+		},
+		{
+			"title": "计算器",
+			"info": "计算器应用",
+			"imgSrc": "images/FCC-计算器.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html"
+		},
+		{
+			"title": "番茄钟",
+			"info": "15分钟提示的番茄时钟",
+			"imgSrc": "images/FCC-番茄钟.png",
+			"htmlSrc": "https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-11/index.html"
+		},
+		{
+			"title": "跑马灯",
+			"info": "炫酷的跑马灯应用",
+			"imgSrc": "images/FCC-跑马灯.png",
+			"htmlSrc": "https://codepen.io/zhouxioayu/pen/gmMmgK"
+		}
+	]
+}
