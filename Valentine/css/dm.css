@@ -3,7 +3,6 @@
 body{
     background: url("../img/bg.png") no-repeat center center fixed;
     background-size: cover;
-    position: relative;
 }
 .hd {
     margin-top: 8vh;
@@ -29,29 +28,31 @@ body{
 }
 
 .photo {
-    width: 49vw;
+    width: 50vw;
     height: 36vh;
     position: absolute;
-    top: 28vh;
-    left: 10vw;
+    top: 37vh;
+    left: 8vw;
     border-radius: 60vw;
+    z-index: -1;
 }
 
 .barrage{
     /* border: 1px solid rgb(197, 197, 197); */
-    height: 400px;
-    margin: 2vh 0;
+    height: 40vh;
+    margin: 4vh 0;
     position: relative;
 }
 
 .send {
     width: 100%;
     text-align: center;
+    position: absolute;
+    bottom: 4vh;
 }
 .send>form{
     margin: 0 auto;
     width: 50vw;
-    z-index: 9999;
 }
 .form-control {
     width: 100%;
@@ -60,6 +61,8 @@ body{
     border-radius: 4px;
     padding: 4px 8px;
     margin-bottom: 2vh;
+    box-sizing: border-box;
+    border: none;
 }
 .form-group {
     display: flex;

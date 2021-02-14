@@ -74,7 +74,7 @@ function Barrage({ str: str, x: x, y: y, color: color, parent: parent }) {
         top: x,
         right: y,
         color: color,
-        fontSize: '1.5rem'
+        fontSize: '1rem'
     })
 
     this.speed = 1
