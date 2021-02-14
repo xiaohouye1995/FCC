@@ -1,0 +1,57 @@
+*{margin: 0;padding: 0;}
+
+body{
+    background: url("../img/bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+.hd {
+    margin-top: 10vh;
+}
+.hd-tit{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Condiment', cursive;
+}
+.hd-sum1{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Condiment', cursive;
+}
+.hd-sum2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Condiment', cursive;
+}
+
+.photo {
+    width: 47vw;
+    height: 36vh;
+    position: absolute;
+    top: 38vh;
+    left: 10vw;
+    border-radius: 60vw;
+}
+
+.barrage{
+    border: 1px solid rgb(197, 197, 197);
+    height: 400px;
+    margin: 10vh auto;
+    position: relative;
+}
+.send>form{
+    width: 400px;
+    z-index: 9999;
+}
+
+.form-control {
+    height: 4vh;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+.btn {
+    height: 4vh;
+    font-size: 2rem;
+}
