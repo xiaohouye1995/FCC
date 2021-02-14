@@ -8,7 +8,7 @@ $(function () {
         '小陈最可爱❤️',
         '爱你的小周',
         '情人节快乐🎉',
-        '暴富了！！',
+        '新年暴富！！',
         '喜欢你',
         ]
     var colors = [
@@ -74,7 +74,7 @@ function Barrage({ str: str, x: x, y: y, color: color, parent: parent }) {
         top: x,
         right: y,
         color: color,
-        fontSize: '25px'
+        fontSize: '2.5rem'
     })
 
     this.speed = 1
