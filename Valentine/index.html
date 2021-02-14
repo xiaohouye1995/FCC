@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="css/dm.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/dm.js"></script>
+    <script>
+        window.onload = function () {
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault()
+                }
+            })
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault()
+            })
+        }
+    </script>
     <title>程序员小周❤️</title>
 </head>
+
 <body>
     <img class="photo" src="./img/cmx01-min.JPG" alt="">
     <div class="hd">
@@ -28,4 +42,5 @@
         </form>
     </div>
 </body>
+
 </html>
